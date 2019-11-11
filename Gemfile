@@ -55,7 +55,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-
+end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
