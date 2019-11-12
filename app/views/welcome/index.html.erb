@@ -1,5 +1,51 @@
-<h1>Welcome <%= current_user.id %></h1>
+<div class="ui info message">
 
-<%= link_to 'Posts', posts_path %>
+<% @user_email = current_user.email %>
+<% @username = @user_email.split('@')[0] %>
+<h1>Hi <%= @username %>!</h1>
+
+  <div class="header">
+   Features:
+  </div>
+  <ul class="list">
+    <li>The current user can see all posts posted by all users (from the latest one to the oldest)</li>
+    <li>User can view a particular post in details</li>
+    <li>User can search for posts (not implemented yet)</li>
+  </ul>
+</div>
+
 <br/>
-<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+
+<div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+</div>
+
+<% @posts.each do |post| %>
+    <div class="ui items">
+    
+    <div class="item">
+        
+        <div class="content">
+            
+            <div class="ui huge header"><%= link_to post.title, post %></div>
+        
+            <div class="extra">
+                <i class="calendar times icon"></i>
+                Posted <%= distance_of_time_in_words post.created_at, DateTime.now %> ago
+                
+                <i class=""></i>
+
+                <i class="user icon"></i>
+                Posted by: 
+                <%= post.user.email %>
+            </div>
+            <div class="description">
+                    <p><%= post.body.truncate_words(10) %></p>
+            </div>
+    </div>
+    </div>
+<% end %>

@@ -10,11 +10,11 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <%= render 'layouts/navigation' %>
+    <% end %>
+    <%= semantic_flash %>
     <div class="ui form">
-      <% if user_signed_in? %>
-        <%= render 'layouts/navigation' %>
-      <% end %>
-      <%= semantic_flash %>
       <%= yield %>
     </div>
   </body>

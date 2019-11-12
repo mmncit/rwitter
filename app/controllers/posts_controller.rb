@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.newest_first
+    @posts = Post.where(:user => current_user).newest_first
   end
 
   # GET /posts/1
