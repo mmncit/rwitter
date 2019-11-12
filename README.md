@@ -1,24 +1,31 @@
-# README
+# Rwitter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rwitter is a Rails web app named after Twitter to manage posts posted by users. Users can perform CRUD operations on their posts and view all other posts. It is an ongoing project.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+```bash
+bundle install 
+rails server
+```
 
-* System dependencies
+* Ruby version: 2.5.7
 
-* Configuration
+* Packages used:
+  * semantic-ui-sass (Semantic UI for Sass)
+  * devise (for user-authentication)
+  * figaro (Heroku-friendly Rails app configuration)
 
-* Database creation
+* Database: Postgres
 
-* Database initialization
+* Test suite: Used rspec-rails. Did not write all the test cases yet.
 
-* How to run the test suite
+* Deployment: You can check the app hosted at Heroku [[Click the link to visit]("https://rwitter19.herokuapp.com/")]
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Deployment instructions
+Please make sure to update the tests as appropriate.
 
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
