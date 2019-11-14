@@ -10,19 +10,20 @@
   <ul class="list">
     <li>The current user can see all posts posted by all users (from the latest one to the oldest)</li>
     <li>User can view a particular post in details</li>
-    <li>User can search for posts (not implemented yet)</li>
+    <li>User can search for posts</li>
   </ul>
 </div>
 
 <br/>
 
-<div class="item">
-      <div class="ui icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
-      </div>
-    </div>
-</div>
+
+  <div class="ui item">
+    <%= form_tag root_path, :method => 'get', :validate=>true do %>
+      <%= text_field_tag :search, params[:search], :class => 'search-box', :required => true %>           
+      <%= submit_tag "Search...", name: nil %>
+    <% end %>
+  </div>
+
 
 <% @posts.each do |post| %>
     <div class="ui items">

@@ -2,7 +2,7 @@
 
 <div class="ui sizer vertical segment">
   <div class="ui huge header"> <%= @post.title %> </div>
-  <p><%= @post.body %></p>
+  <p><%= simple_format(@post.body) %></p>
 </div>
 
 <button class="ui button">

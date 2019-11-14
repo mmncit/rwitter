@@ -3,11 +3,13 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
+    # display the post of currently logged-in user sorted by newest first
     @posts = Post.where(:user => current_user).newest_first
   end
 
   # GET /posts/1
   def show
+    @post = Post.find(params[:id])
   end
 
   # GET /posts/new
