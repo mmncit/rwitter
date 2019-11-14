@@ -32,7 +32,7 @@ class PostsController < ApplicationController
         redirect_to(posts_path)
       else
         # if fails, re-display the page with proper error message
-        render('new')
+        render :new
       end
 
   end

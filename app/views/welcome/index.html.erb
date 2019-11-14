@@ -17,9 +17,9 @@
 <br/>
 
 
-  <div class="ui item">
+  <div class="ui icon input">
     <%= form_tag root_path, :method => 'get', :validate=>true do %>
-      <%= text_field_tag :search, params[:search], :class => 'search-box', :required => true %>           
+      <%= text_field_tag :search, params[:search], :class => 'search-box', :placeholder => "Search title or body", :required => true %>           
       <%= submit_tag "Search...", name: nil %>
     <% end %>
   </div>
