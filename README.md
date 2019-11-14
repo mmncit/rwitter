@@ -1,26 +1,39 @@
 # Rwitter
 
-Rwitter is a Rails web app named after Twitter to manage posts posted by users. Users can perform CRUD operations on their posts and view all other posts. It is an ongoing project.
+Rwitter is a Rails web app named after Twitter to manage and view posts. 
 
-## Installation
+### Live APP LINK : [https://rwitter19.herokuapp.com](https://rwitter19.herokuapp.com)
+
+## Features:
+
+* Users can perform CRUD operations on their own posts.
+* Users can view all other posts ordered by the newest first.
+* Users can search posts by title or body.
+
+## Build instruction:
 
 ```bash
 bundle install 
 rails server
 ```
+To run the test suite:
+```bash
+rspec
+```
 
-* Ruby version: 2.5.7
-
-* Packages used:
-  * semantic-ui-sass (Semantic UI for Sass)
-  * devise (for user-authentication)
-  * figaro (Heroku-friendly Rails app configuration)
+## Technologies:
 
 * Database: Postgres
 
-* Test suite: Used rspec-rails. Did not write all the test cases yet.
+* Test framework: rspec
 
-* Deployment: You can check the app hosted at Heroku [Click the link to visit](https://rwitter19.herokuapp.com)
+* Gems:
+  * faker, factory_bot_rails (to create mocks)
+  * shoulda-matchers (to write rspec for models)
+  * devise (for user-authentication)
+  * figaro (heroku-friendly rails app configuration)
+  * semantic-ui-sass (Semantic UI for Sass)
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
