@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mmncit/rwitter.svg?branch=master)](https://travis-ci.org/mmncit/rwitter)
+
 # Rwitter
 
 Rwitter is a Rails web app named after Twitter to manage and view posts. 
