@@ -2,7 +2,7 @@
 
 # Rwitter
 
-Rwitter is a Rails web app named after Twitter to manage and view posts. 
+Rwitter is a Rails web app to manage and view posts. 
 
 ### Live APP LINK : [https://rwitter19.herokuapp.com](https://rwitter19.herokuapp.com)
 
@@ -36,6 +36,11 @@ rspec
   * figaro (heroku-friendly rails app configuration)
   * semantic-ui-sass (Semantic UI for Sass)
 
+## Author
+
+**Mamun Rashid**
+
+* [github/mmncit](https://github.com/mmncit)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
