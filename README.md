@@ -25,7 +25,7 @@ rspec
 
 ## Technologies:
 
-* Database: Postgres
+* Database: PostgreSQL
 
 * Test framework: rspec
 
