@@ -23,6 +23,7 @@ To run the test suite:
 rspec
 ```
 
+
 ## Technologies:
 
 * Database: PostgreSQL
@@ -35,6 +36,11 @@ rspec
   * devise (for user-authentication)
   * figaro (heroku-friendly rails app configuration)
   * semantic-ui-sass (Semantic UI for Sass)
+  
+  
+* Sceeenshot of homepage:
+
+![rwitter_homepage](https://user-images.githubusercontent.com/10362940/188285881-4de909c0-644b-4e1f-bcfb-d43468428e46.png)
 
 ## Author
 
